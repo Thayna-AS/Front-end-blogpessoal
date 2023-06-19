@@ -9,7 +9,7 @@ function Footer(){
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Grid alignItems="center" item xs={12}>
-                    <Box style={{ backgroundColor: "#2D2D2D", height: "120px" }}>
+                    <Box style={{ backgroundColor: "#b27092", height: "120px" }}>
                         <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center">
                             <Typography variant="h5" align="center" gutterBottom style={{ color: "lightgrey" }}>Acompanhe meu trabalho pelas minhas redes sociais</Typography>
                         </Box>
@@ -22,7 +22,7 @@ function Footer(){
                             </a>
                         </Box>
                     </Box>
-                    <Box style={{ backgroundColor: "#000000", height: "40px" }}>
+                    <Box style={{ backgroundColor: "#774c60", height: "40px" }}>
                         <Box paddingTop={1}>
                             <Typography variant="subtitle2" align="center" gutterBottom style={{ color: "lightgrey" }} >© 2023 Desenvolvido por: Thayna de Almeida</Typography>
                         </Box>

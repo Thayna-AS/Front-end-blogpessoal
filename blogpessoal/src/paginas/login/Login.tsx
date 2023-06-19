@@ -14,9 +14,9 @@ function Login() {
                         <TextField id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
                         <Box marginTop={2} textAlign='center'>
                             <Link to='/home'>
-                            <Button type='submit' variant='contained' color='primary'>
-                                Logar
-                            </Button>
+                                <Button type='submit' variant='contained' color='primary'>
+                                    Logar
+                                </Button>
                             </Link>
                         </Box>
                     </form>
@@ -24,13 +24,13 @@ function Login() {
                         <Box marginRight={1}>
                             <Typography variant='subtitle1' gutterBottom align='center'>Junte-se a comunidade</Typography>
                         </Box>
-                        <Typography variant='subtitle1' gutterBottom align='center' style={{fontWeight:'bold'}}>Cadastre-se</Typography>
+                        <Typography variant='subtitle1' gutterBottom align='center' style={{ fontWeight: 'bold' }}>Cadastre-se</Typography>
                     </Box>
                 </Box>
             </Grid>
             <Grid xs={6} style={{
-                backgroundImage: `url(https://i.imgur.com/d5bMdDJ.jpg)`,
-                backgroundRepeat: 'no-repeat', width: '100vh', minHeight: '100vh', backgroundSize: 'cover', backgroundPosition: 'center'
+                backgroundImage: `url(https://www.primecursos.com.br/blog/wp-content/uploads/2020/05/Pantys_final_dialogos_v02.gif)`,
+                backgroundRepeat: 'no-repeat', width: '80vh', minHeight: '89vh', backgroundSize: 'cover', backgroundPosition: 'center'
             }}>
 
             </Grid>
