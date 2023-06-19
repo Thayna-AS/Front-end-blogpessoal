@@ -22,7 +22,7 @@ function Login() {
                     </form>
                     <Box display='flex' justifyContent='center' marginTop={2}>
                         <Box marginRight={1}>
-                            <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
+                            <Typography variant='subtitle1' gutterBottom align='center'>Junte-se a comunidade</Typography>
                         </Box>
                         <Typography variant='subtitle1' gutterBottom align='center' style={{fontWeight:'bold'}}>Cadastre-se</Typography>
                     </Box>

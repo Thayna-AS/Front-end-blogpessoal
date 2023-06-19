@@ -11,10 +11,10 @@ function Footer(){
                 <Grid alignItems="center" item xs={12}>
                     <Box style={{ backgroundColor: "#2D2D2D", height: "120px" }}>
                         <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center">
-                            <Typography variant="h5" align="center" gutterBottom style={{ color: "lightgrey" }}>Me acompanhe nas redes </Typography>
+                            <Typography variant="h5" align="center" gutterBottom style={{ color: "lightgrey" }}>Acompanhe meu trabalho pelas minhas redes sociais</Typography>
                         </Box>
                         <Box display="flex" alignItems="center" justifyContent="center">
-                            <a href="https://www.facebook.com/generationbrasil" target="_blank">
+                            <a href="https://github.com/Thayna-AS" target="_blank">
                                 <GitHubIcon style={{ fontSize: 50, color: "white" }} />
                             </a>
                             <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank">
@@ -24,7 +24,7 @@ function Footer(){
                     </Box>
                     <Box style={{ backgroundColor: "#000000", height: "40px" }}>
                         <Box paddingTop={1}>
-                            <Typography variant="subtitle2" align="center" gutterBottom style={{ color: "lightgrey" }} >© 2023 Desenvolvido por: Luiz Fernando Benedito Rodrigues</Typography>
+                            <Typography variant="subtitle2" align="center" gutterBottom style={{ color: "lightgrey" }} >© 2023 Desenvolvido por: Thayna de Almeida</Typography>
                         </Box>
                     </Box>
                 </Grid>
