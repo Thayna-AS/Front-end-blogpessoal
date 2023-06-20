@@ -22,7 +22,7 @@ function Footer(){
                             </a>
                         </Box>
                     </Box>
-                    <Box style={{ backgroundColor: "#774c60", height: "40px" }}>
+                    <Box style={{ backgroundColor: "#774c60", height: "50px" }}>
                         <Box paddingTop={1}>
                             <Typography variant="subtitle2" align="center" gutterBottom style={{ color: "lightgrey" }} >© 2023 Desenvolvido por: Thayna de Almeida</Typography>
                         </Box>
