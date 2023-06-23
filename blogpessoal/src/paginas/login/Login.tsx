@@ -24,7 +24,9 @@ function Login() {
                         <Box marginRight={1}>
                             <Typography variant='subtitle1' gutterBottom align='center'>Junte-se a comunidade</Typography>
                         </Box>
-                        <Typography variant='subtitle1' gutterBottom align='center' style={{ fontWeight: 'bold' }}>Cadastre-se</Typography>
+                        <Link to='/cadastro'>
+                            <Typography variant='subtitle1' gutterBottom align='center' style={{ fontWeight: 'bold' }}>Cadastre-se</Typography>
+                        </Link>
                     </Box>
                 </Box>
             </Grid>
