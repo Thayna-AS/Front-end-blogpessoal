@@ -1,9 +1,9 @@
 import React from 'react';
-import {Typography, Grid, Button} from '@material-ui/core';
-import {Box} from '@mui/material';
-import './Postagens.css'
+import './Forum.css';
+import { Grid, Box, Typography, TextField, Button } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
-function Postagens() {
+function Forum() {
     return (
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "#f5cac3" }}>
@@ -28,4 +28,4 @@ function Postagens() {
     );
 }
 
-export default Postagens;
+export default Forum;

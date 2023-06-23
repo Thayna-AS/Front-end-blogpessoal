@@ -53,7 +53,7 @@ function CadastroUsuario() {
     return (
         <Grid container direction='row' justifyContent='center' alignItems='center'>
             <Grid item xs={6} style={{
-                backgroundImage: `url(https://i.pinimg.com/originals/0a/46/ad/0a46ade1e2c2735bd3d77cc62aef33f6.jpg)`,
+                backgroundImage: `url(https://img.freepik.com/vektoren-premium/online-meeting-illustration_32854-328.jpg?w=2000)`,
                 backgroundRepeat: 'no-repeat', width: '100vh', minHeight: '100vh', backgroundSize: 'cover', backgroundPosition: 'center'
             }}></Grid>
             <Grid item xs={6} alignItems='center'>
