@@ -1,10 +1,26 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Typography, Grid, Button} from '@material-ui/core';
 import {Box} from '@mui/material';
+import TabPostagem from '../../componentes/postagens/tabpostagem/TabPostagem';
 import './Home.css';
+import { useNavigate } from 'react-router-dom';
+import useLocalStorage from 'react-use-localstorage';
 import { Link } from 'react-router-dom';
+import ModalPostagem from '../../componentes/postagens/modalPostagem/ModalPostagem';
 
 function Home() {
+
+    let navigate = useNavigate();
+    const [token, setToken] = useLocalStorage('token');
+    
+    useEffect(() => {
+      if (token == "") {
+          alert("Você precisa estar logado")
+          navigate("/login")
+  
+      }
+  }, [token])
+
     return (
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "#f5cac3" }}>
@@ -15,17 +31,16 @@ function Home() {
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
+                            <ModalPostagem/>
                         </Box>
-                        <Link to='/Postagens'>
                         <Button variant="outlined" style={{ borderColor: "lightgrey", backgroundColor: "#432818", color: "lightgrey" }}>Ver Postagens</Button>
-                        </Link>
                     </Box>
-                    
                 </Grid>
                 <Grid item xs={6} >
                     <img src="https://uploads-ssl.webflow.com/6399c61683700ed8ab159d36/639fb83a406f2fe5e0ad07ae_Base-imagem-destacada-blog.png" alt="" width="500px" height="500px" />
                 </Grid>
                 <Grid xs={12} style={{ backgroundColor: "white" }}>
+                    <TabPostagem/>
                 </Grid>
             </Grid>
         </>
