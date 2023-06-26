@@ -1,25 +1,24 @@
 import './App.css';
 import React from 'react';
+
 import Home from './paginas/home/Home';
 import Login from './paginas/login/Login';
 import Sobre from './paginas/sobre/Sobre';
 import Temas from './paginas/temas/Temas';
-import Forum from './paginas/forum/Forum';
 import Postagens from './paginas/postagens/Postagens';
+import ListaTema from './componentes/temas/listatema/ListaTema';
+import CadastrarTema from './paginas/cadastrarTema/CadastrarTema';
+import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import ListaPostagem from './componentes/postagens/listapostagem/ListaPostagem';
 import CadastroPostagem from './componentes/postagens/cadastroPostagem/CadastroPostagem';
 import CadastroTema from './componentes/temas/cadastroTema/CadastroTema';
 import DeletarPostagem from './componentes/postagens/deletarPostagem/DeletarPostagem';
 import DeletarTema from './componentes/temas/deletarTema/DeletarTema';
+
 import Navbar from './componentes/estaticos/navbar/Navbar';
 import Footer from './componentes/estaticos/footer/Footer';
-import ListaTema from './componentes/temas/listatema/ListaTema';
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
-import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
-
-
-
 
 function App() {
   return (
@@ -31,7 +30,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/temas" element={<Temas />} />
-          <Route path="/Forum" element={<Forum />} />
+          <Route path="/cadastrarTema" element={<CadastrarTema />} />
           <Route path="/login" element={<Login />} />
           <Route path="/temas" element={<ListaTema />} />
           <Route path="/postagens" element={<Postagens />} />

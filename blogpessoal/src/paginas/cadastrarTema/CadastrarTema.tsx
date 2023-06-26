@@ -1,9 +1,8 @@
 import React from 'react';
-import './Forum.css';
+import './CadastrarTema.css';
 import { Grid, Box, Typography, TextField, Button } from '@material-ui/core';
-import { Link } from 'react-router-dom';
 
-function Forum() {
+function CadastrarTema() {
     return (
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "#f5cac3" }}>
@@ -28,4 +27,4 @@ function Forum() {
     );
 }
 
-export default Forum;
+export default CadastrarTema;
