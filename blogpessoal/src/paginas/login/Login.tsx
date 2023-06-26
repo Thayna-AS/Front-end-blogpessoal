@@ -67,7 +67,7 @@ function Login() {
                         <Box marginRight={1}>
                             <Typography variant='subtitle1' gutterBottom align='center'>Junte-se a comunidade</Typography>
                         </Box>
-                        <Link to='/cadastro'>
+                        <Link to='/cadastrousuario'>
                             <Typography variant='subtitle1' gutterBottom align='center' style={{ fontWeight: 'bold' }}>Cadastre-se</Typography>
                         </Link>
                     </Box>
