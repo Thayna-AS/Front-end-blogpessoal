@@ -8,25 +8,39 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './Navbar.css'
 import { addToken } from '../../../store/tokens/actions';
+import { toast} from 'react-toastify';
 
 
 
 function Navbar() {
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
-    )
-    let history = useNavigate();
+    );
+
+    let navigate = useNavigate();
     const dispatch = useDispatch();
 
     function goLogout() {
-        dispatch(addToken(''))
-        alert("Usuário deslogado!")
+        dispatch(addToken(''));
+        toast.info('Usuário deslogado', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+        });
+
         Navigate('/login')
+    
     }
 
     var navbarComponent;
 
     if (token != "") {
+
         navbarComponent = <AppBar position="static">
             <Toolbar variant="dense" style={{ backgroundColor: "#774c60" }}>
                 <Box className='cursor' >
@@ -55,9 +69,9 @@ function Navbar() {
                     </Box>
 
                     <Box mx={1} className='cursor'>
-                        <Link to='/Temas'>
+                        <Link to='/Tema'>
                             <Typography variant="h6" style={{ color: "lightgrey" }}>
-                                Temas
+                                Tema
                             </Typography>
                         </Link>
                     </Box>

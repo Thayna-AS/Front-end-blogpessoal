@@ -5,7 +5,7 @@ import { Box } from '@mui/material';
 import './ListaTema.css';
 import Tema from '../../../models/Tema';
 import useLocalStorage from 'react-use-localstorage';
-import { busca } from '../../../services/Service';
+import { busca } from '../../../services/Services';
 
 function ListaTema() {
     const [temas, setTemas] = useState<Tema[]>([])

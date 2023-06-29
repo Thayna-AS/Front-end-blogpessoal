@@ -1,26 +1,35 @@
 import React from 'react';
 import './App.css';
 import store from './store/store';
+import { Provider } from 'react-redux';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
+
 import Home from './paginas/home/Home';
 import Login from './paginas/login/Login';
-
 import Navbar from './componentes/estaticos/navbar/Navbar';
-import ListaTema from './componentes/temas/listatema/ListaTema';
-import ListaPostagem from './componentes/postagens/listapostagem/ListaPostagem';
-import CadastroPostagem from './componentes/postagens/cadastroPostagem/CadastroPostagem';
-import CadastroTema from './componentes/temas/cadastroTema/CadastroTema';
-import DeletarPostagem from './componentes/postagens/deletarPostagem/DeletarPostagem';
-import DeletarTema from './componentes/temas/deletarTema/DeletarTema';
 import Footer from './componentes/estaticos/footer/Footer';
-import { Provider } from 'react-redux';
+
+
+import ListaTema from './componentes/temas/listatema/ListaTema';
+import DeletarTema from './componentes/temas/deletarTema/DeletarTema';
+import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
+import CadastroTema from './componentes/temas/cadastroTema/CadastroTema'
+import ListaPostagem from './componentes/postagens/listapostagem/ListaPostagem';
+import DeletarPostagem from './componentes/postagens/deletarPostagem/DeletarPostagem';
+import CadastroPostagem from './componentes/postagens/cadastroPostagem/CadastroPostagem';
+
+
+
+
 
 
 
 function App() {
   return (
     <Provider store={store}>
+      <ToastContainer />
       <Router>
         <Navbar />
 
