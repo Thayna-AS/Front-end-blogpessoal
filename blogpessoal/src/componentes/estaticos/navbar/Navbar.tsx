@@ -10,6 +10,20 @@ import './Navbar.css'
 import { addToken } from '../../../store/tokens/actions';
 import { toast} from 'react-toastify';
 
+//teste nav bar
+
+import IconButton from '@mui/material/IconButton';
+import Menu from '@mui/material/Menu';
+import MenuIcon from '@mui/icons-material/Menu';
+import Container from '@mui/material/Container';
+import Avatar from '@mui/material/Avatar';
+import Button from '@mui/material/Button';
+import Tooltip from '@mui/material/Tooltip';
+import MenuItem from '@mui/material/MenuItem';
+import AdbIcon from '@mui/icons-material/Adb';
+
+//
+
 
 
 function Navbar() {
@@ -33,10 +47,10 @@ function Navbar() {
             progress: undefined,
         });
 
-        Navigate('/login')
+        navigate('/login')
     
     }
-
+    
     var navbarComponent;
 
     if (token != "") {
