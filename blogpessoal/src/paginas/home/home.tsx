@@ -19,9 +19,9 @@ import { toast } from 'react-toastify';
 function Home() {
 
     let navigate = useNavigate();
-    const token = useSelector< TokenState, TokenState["tokens"]>(
+    const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
-    )
+      );
     
     useEffect(() => {
       if (token == "") {
